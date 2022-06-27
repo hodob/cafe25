@@ -1,0 +1,32 @@
+/* css 적용 */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* 클래스(.)를 선택 */
+
+.male {
+    /* 글자색변경 */
+    color: aquamarine;
+}
+
+.female {
+    color: yellow;
+}
+
+/* UL선택 */
+
+ul {
+    /* 리스트 스타일 없애기! bullet 사라짐 */
+    list-style: none;
+}
+
+/* 아이디 (#) 선택 */
+#ceo {
+    background-color: green;
+}
+
+/* h2태그 색 변경 */
+h2 {
+    color: blue;
+}

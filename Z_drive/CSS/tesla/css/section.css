@@ -1,0 +1,96 @@
+#fullpage.no-scroll {
+  overflow-y: hidden;
+  max-height: 100vh;
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.section.one {
+  /* background-image: url(/CSS/tesla/media/1.avif); */
+  /* background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/538ac149-d103-4834-9d38-641d8ae447ef/bvlatuR/std/4096x2560/Homepage-Model-S-Desktop-LHD); */
+  background-image: url(/CSS/tesla/media/test.jfif);
+}
+
+.section.two {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/0x0/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0);
+}
+
+.section.three {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/03e533bf-8b1d-463f-9813-9a597aafb280/bvlatuR/std/4096x2560/M3-Homepage-Desktop-LHD);
+}
+
+.section.four {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8c26f779-11e5-4cfc-bd7c-dcd03b18ff88/bvlatuR/std/4096x2561/Model-X-Main-Hero-Desktop-LHD);
+}
+
+.section.five {
+  background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/27d0055c-b0bf-476c-b3aa-ec59d314f871/bvlatuR/std/0x0/27d0055c-b0bf-476c-b3aa-ec59d314f871);
+}
+
+.section_content {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--primary-color);
+
+}
+
+.section_content_title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.section_content_subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section_content_subtitle a {
+  color: inherit;
+}
+
+.section_content_subtitle a:hover {
+  text-decoration: underline;
+}
+
+.section_action_container {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.section_action_btn {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem;
+  border-radius: 2rem;
+  flex-basis: 80%;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.action_btn_primary {
+  background: rgba(23, 26, 42, 0.8);
+  color: white;
+}
+
+.action_btn_secondary {
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--primary-color);
+}

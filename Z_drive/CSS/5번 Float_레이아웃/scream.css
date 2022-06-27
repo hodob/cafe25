@@ -1,0 +1,153 @@
+/* 네비게이션 */
+.site-nav {
+  margin-top: 20px;
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav li {
+  list-style: none;
+  float: left;
+  margin-right: 5px;
+}
+
+.site-nav a {
+  /* a가 인라인이기 깨문에 블럭으로 수정함 */
+  display: block;
+  color: #617140;
+  /* 밑줄설정 text-decoration */
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 3px solid #e5e9dc;
+  border-bottom: none;
+  /* background-color: #fff; */
+}
+
+/* hover :마우스를 올렸을때 */
+.site-nav a:hover {
+  background-color: #e5e9dc;
+}
+
+/* 더 많은 css */
+html {
+  background-color: #D3EBCD;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 87%;
+}
+
+.container {
+  /* max-width: 940px; */
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  padding-left: 40px;
+  padding-right: 40px;
+  /* 기본이 content이기 때문에 박스 크기를 정확하게 주기 위해서  */
+  box-sizing: border-box;
+  /* 색표현법 색명, rgb 16진수 */
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #617140;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 165%;
+}
+
+header p {
+  margin: 0;
+}
+
+.content-area {
+  border-top: 3px solid #e5e9dc;
+  border-bottom: 3px solid #e5e9dc;
+}
+
+.main-area {
+  /* border-top: 3px solid black; */
+  float: left;
+  /* border-bottom: 3px solid black; */
+  width: 66%;
+  box-sizing: border-box;
+  padding-right: 35px;
+}
+
+.sidebar {
+  width: 34%;
+  float: left;
+  background-color: #e5e9dc;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  font-size: 85%;
+  z-index: 2;
+  position: relative;
+}
+
+footer {
+  /* 글자기운다 설정 */
+  text-align: center;
+  font-size: 85%;
+  color: #999;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.fix {
+  /* 플롯했을때 위로 따라 안올라가게  */
+  clear: both;
+}
+
+/* 플롯을 에러방ㅈ이(플로트를 사용하는 곳에 group을 추가) */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 오버레이 */
+.image-banner {
+  /* position: relative;: 상대적 위치 이동 가능 */
+  /* 절대좌표의 기준이 될수 있기때문에 주었다. */
+  position: relative;
+  left: 100px;
+}
+
+.image-banner img {
+  display: block;
+}
+
+.banner-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, .65);
+  padding: 15px 40px;
+  font-size: 100%;
+  text-align: center;
+}

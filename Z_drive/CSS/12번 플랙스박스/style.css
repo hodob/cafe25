@@ -1,0 +1,52 @@
+html,
+body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.container>div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffeead;
+  max-width: 300px
+}
+
+.home {
+  background-color: #96ceb4;
+}
+
+.search {
+  background-color: #ff6f69;
+}
+
+.logout {
+  background-color: skyblue;
+}
+
+.container {
+  border: 5px solid #ffcc5c;
+  /* 플래스 사용시 부모태그에서 자식 아이템들을 정열 */
+  /* 기본이 가로로 정렬함 , 왼쪽에서 오른쪽으로  */
+  display: flex;
+  /* justify-content: center; */
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.home {
+  /* margin-right: auto; */
+  flex: 1;
+  order: 1;
+}
+
+.search {
+  flex: 1;
+  order: 3;
+}
+
+.logout {
+  flex: 1;
+  order: 2;
+  margin-left: auto;
+}

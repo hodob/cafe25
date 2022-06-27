@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: white;
+      width: 100px;
+      height: 100px;
+      transition-property: background-color border-radius height width;
+      /* transition-property: all; */
+      /*transition-property: background-color border-radius height width; 의 변화시간을 3초 주는것 */
+      transition-duration: 3s;
+      /*  transition-timing-function: ease-out; --> 끝날떄 천천히 easy-in 시작할때 천천히 */
+      /* easy-in-out 처음 끝날때 천천히 중간 빠르게  */
+      /* transition-timing-function: ease-out; */
+      /* 2초 뒤에 시작함 */
+      /* transition-delay: 2s; */
+
+      /* 단축키워드 - property/duration/timing-function/delay */
+      /* 모든것을 한줄로 */
+      /* transition: all 1s ease-in-out; */
+    }
+
+    .box:hover {
+      background: red;
+      border-radius: 50%;
+      height: 300px;
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box"></div>
+</body>
+
+</html>

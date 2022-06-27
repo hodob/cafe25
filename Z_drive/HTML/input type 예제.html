@@ -1,0 +1,59 @@
+<form>
+    <!-- Text -->
+    <div>
+        <label for="name">이름</label><br>
+        <input type="text" id="name" name="name" value="길동">
+    </div>
+    <!-- Email -->
+    <div>
+        <label for="email">이메일</label><br>
+        <input type="email" name="email" id="email" placeholder="Enter an email">
+    </div>
+    <!-- Textarea -->
+    <div>
+        <label for="message">메세지</label><br>
+        <textarea name="message" id="message" cols="50" rows="5"></textarea>
+    </div>
+    <!-- Select -->
+    <div>
+        <label for="gender">성별</label>
+        <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female" selected>Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <!-- Number -->
+    <div>
+        <label for="age">나이</label><br>
+        <input type="number" name="age" id="age">
+    </div>
+    <!-- Date -->
+    <div>
+        <label for="bithdate">생년월일</label><br>
+        <input type="date" name="birthdate" id="birthdate">
+    </div>
+    <!-- Radio name이 같음 -->
+    <div>
+        <label>멤버쉽</label>
+        <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+        <input type="radio" name="membership" value="simple" id="simple">심플
+        <input type="radio" name="membership" value="standard" id="standard">스탠다드
+        <input type="radio" name="membership" value="super" id="super" checked>슈퍼
+    </div>
+    <!-- Checkbox 다중 선택 가능 -->
+    <div>
+        <label>I Like</label>
+        <!-- name 속성은 서버로 보내질 값 앞에 붙음 -->
+        <input type="checkbox" name="like1" value="bike" id="bike">오토바이
+        <input type="checkbox" name="like2" value="car" id="car">자동차
+        <input type="checkbox" name="like3" value="boat" id="boat">보트
+    </div>
+    <!-- Input submit -->
+    <input type="submit" value="제출">
+    <!-- Button submit -->
+    <!-- <button type="submit">Submit</button> -->
+    <button type="reset">리셋</button>
+</form>
+profile
+jb kim

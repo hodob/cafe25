@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>입력 폼 만들기!</title>
+</head>
+
+<body>
+    <h1>입사 지원서</h1>
+    <h2>필수 정보</h2>
+
+    <!-- div, 블럭화(영역묶음) 태그-->
+    <div>
+        <!-- 문자 입력 -->
+        <label>이름: </label>
+        <input type="text" />
+    </div>
+
+    <div>
+        <!-- 날짜 입력 -->
+        <label>생년월일: </label>
+        <input type="date" />
+    </div>
+
+    <div>
+        <!-- 선택 입력 -->
+        <label>성별: </label>
+        <select>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+    </div>
+
+    <!-- 긴 문장 입력 -->
+    <h2>개발자는 왜?</h2>
+    <label for="messege"></label>
+    <textarea name="mesesge" id="messege" cols="30" rows="5"></textarea>
+
+    <!-- 체크박스 -->
+    <h2>사용해본 것들</h2>
+    <label for="checkbox"></label>
+    <div> <input type="checkbox" name="1" value="java" id="java">java</div>
+    <div> <input type="checkbox" name="2" value="Python" id="Python">Python</div>
+    <div> <input type="checkbox" name="3" value="HTML/CSS" id="HTML/CSS">HTML/CSS</div>
+    <div> <input type="checkbox" name="4" value="JS" id="JS">JS</div>
+    <div> <input type="checkbox" name="5" value="Bootsrap" id="Bootsrap">Bootsrap</div>
+    <div> <input type="checkbox" name="6" value="SQL" id="SQL">SQL</div>
+    <!-- 라디오 버튼 -->
+    <h2>희망 부서</h2>
+    <label for="radio"></label>
+    <div><input type="radio" name="team"> 프론트엔드</div>
+    <div><input type="radio" name="team"> 백엔드</div>
+    <div><input type="radio" name="team"> DB</div>
+</body>
+
+</html>
